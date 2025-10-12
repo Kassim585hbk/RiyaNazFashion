@@ -144,6 +144,35 @@ footer {
   width: 30px;
   height: 30px;
 }
+.service {
+  flex: 1 1 300px;
+  margin: 20px;
+  padding: 25px;
+  border: 1px solid #e0cfe3;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.service:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.service-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6em;
+  color: #a83279;
+  margin-bottom: 10px;
+}
+
+.service-desc {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.05em;
+  color: #444;
+  line-height: 1.7;
+}
 
   </style>
 </head>
@@ -162,16 +191,29 @@ footer {
 </nav>
 
 <section id="services">
-  <h2>Our Services</h2>
+  <h2 style="text-align: center; font-size: 2.4em; color: #a83279;">Our Services</h2>
   <div class="services">
+
     <div class="service">
-      <h3>Mehandi Application</h3>
-      <p>Beautiful and intricate Mehandi designs for weddings, festivals, and events.</p>
+      <h3 class="service-title">🎨 Mehandi Application</h3>
+      <p class="service-price">Starts at £6 per hand</p>
+      <p class="service-desc">Intricate and beautiful Mehandi designs for weddings, parties, and festivals.</p>
+      <details>
+        <summary class="details-toggle">More details</summary>
+        <p class="details-text">We offer Arabic, Rajasthani, and Bridal styles. Special packages for groups and events are available. Long-lasting natural stain guaranteed.</p>
+      </details>
     </div>
+
     <div class="service">
-      <h3>Stone Embellishing</h3>
-      <p>Give your outfits a sparkling upgrade with custom stone work.</p>
+      <h3 class="service-title">💎 Stone Embellishing</h3>
+      <p class="service-price">Starts at £20 per piece</p>
+      <p class="service-desc">Give your blouses, sarees, or accessories a dazzling upgrade with elegant stone work.</p>
+      <details>
+        <summary class="details-toggle">More details</summary>
+        <p class="details-text">Hand-applied crystal, kundan, and mirror stone work. Ideal for wedding attire, stage outfits, and festive clothing.</p>
+      </details>
     </div>
+
   </div>
 </section>
 
@@ -217,9 +259,9 @@ footer {
 <section id="contact">
   <h2>Contact Us</h2>
   <p style="text-align: center;">
-    📞 <strong>+91-XXXXXXXXXX</strong><br>
-    📧 <strong>mehandi.stoneart@example.com</strong><br>
-    📍 Your City, India
+    📞 <strong>+44-07435924921</strong><br>
+    📧 <strong>riyana21193@gmail.com</strong><br>
+    📍 Your Leeds, UK
   </p>
 </section>
 
