@@ -415,12 +415,12 @@ footer {
 
 
 <section id="order">
-  <h2>Place Your Order</h2>
+  <h2>Send Us Your Enquiry</h2>
   <form action="https://formspree.io/f/manploal" method="POST">
-    <label for="name">Full Name</label>
+    <label for="name">Full Name <span class="required">*</span></label>
     <input type="text" id="name" name="name" required>
 
-    <label for="phone">Phone Number</label>
+    <label for="phone">Phone Number <span class="required">*</span></label>
     <input type="tel" id="phone" name="phone" required>
 
     <label for="service">Select Service</label>
@@ -434,7 +434,7 @@ footer {
     <label for="details">Additional Details</label>
     <textarea id="details" name="details" rows="4" placeholder="Event date, special instructions, etc."></textarea>
 
-    <button type="submit">Submit Order</button>
+    <button type="submit">Submit</button>
   </form>
 </section>
 
@@ -454,6 +454,7 @@ footer {
 <!-- WhatsApp Chat Button -->
 <a class="whatsapp-float" href="https://wa.me/919894660673" target="_blank" title="Chat on WhatsApp">
   <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp Chat">
+  <span class="whatsapp-text">Chat with us</span>
 </a>
 
 </body>
