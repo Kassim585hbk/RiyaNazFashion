@@ -6,16 +6,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mehandi & Stone Embellishment Services</title>
  <style>
+
 .video-wrapper {
   max-width: 600px;
   width: 100%;
-  margin: auto;
+  margin: 20px auto;
+  aspect-ratio: 16 / 9;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .video-wrapper video {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
+
+
 .gallery img {
   max-width: 100%;
   height: auto;
@@ -396,7 +406,7 @@ footer {
 </div>
 
 <div class="video-wrapper">
-  <video controls poster="images/dress_1.jpg">
+  <video controls poster="images/dress_3.jpg">
     <source src="videos/Stone_Work.mp4" type="video/mp4">
     </video>
 </div>
