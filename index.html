@@ -14,6 +14,54 @@
 #order h2 {
   text-align: center;
 }
+.faq-container {
+  max-width: 700px;
+  margin: 30px auto;
+  font-family: 'Poppins', sans-serif;
+}
+
+.faq-item {
+  border: 1px solid #e0cfe3;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.faq-question {
+  padding: 15px 20px;
+  background-color: #f9f1f7;
+  color: #a83279;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+}
+
+.faq-question::after {
+  content: '+';
+  position: absolute;
+  right: 20px;
+  font-size: 1.2em;
+  transition: transform 0.3s;
+}
+
+.faq-item.active .faq-question::after {
+  content: '-';
+}
+
+.faq-answer {
+  display: none;
+  padding: 15px 20px;
+  border-top: 1px solid #e0cfe3;
+  color: #444;
+  background-color: #fffdf7;
+  font-size: 0.95em;
+  line-height: 1.6;
+}
+
+.faq-item.active .faq-answer {
+  display: block;
+}
 
 #contact h2 {
   text-align: center;
@@ -371,6 +419,7 @@ footer {
   <a href="#gallery">Gallery</a>
   <a href="#order">Order</a>
   <a href="#contact">Contact</a>
+  <a href="#faq">FAQ</a>
 </nav>
 
 <section id="services">
@@ -477,6 +526,39 @@ footer {
   </form>
 </section>
 
+<section id="faq">
+  <h2 style="text-align: center; font-size: 2.2em; color: #a83279;">Frequently Asked Questions</h2>
+  <div class="faq-container">
+
+    <div class="faq-item">
+      <div class="faq-question">What services do you offer?</div>
+      <div class="faq-answer">We specialize in Mehandi (henna) application and stone embellishment on clothing, accessories, and more.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Where are you based?</div>
+      <div class="faq-answer">We are based in Hunslet, Leeds, UK – LS10 1SX and offer local services with some availability for travel.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Do I need to book in advance?</div>
+      <div class="faq-answer">Yes, we recommend booking in advance, especially during festival and wedding seasons to secure your slot.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">What is the starting price?</div>
+      <div class="faq-answer">Mehandi starts at £6 per hand, and stone embellishment starts at £20 per piece.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">How can I book a service?</div>
+      <div class="faq-answer">You can fill out the enquiry form above or contact us directly via WhatsApp or email for quicker responses.</div>
+    </div>
+
+  </div>
+</section>
+
+
 <section id="contact">
   <h2 style="text-align: center;">Contact Us</h2>
   <p style="text-align: center;">
@@ -497,4 +579,14 @@ footer {
 </a>
 
 </body>
+<script>
+  const faqItems = document.querySelectorAll('.faq-item');
+
+  faqItems.forEach(item => {
+    item.querySelector('.faq-question').addEventListener('click', () => {
+      item.classList.toggle('active');
+    });
+  });
+</script>
+
 </html>
