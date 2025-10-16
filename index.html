@@ -10,6 +10,31 @@
   color: red;
   font-weight: bold;
 }
+.call-now-button {
+  display: none; /* Hidden by default */
+  position: fixed;
+  bottom: 80px; /* slightly above WhatsApp button */
+  right: 20px;
+  background-color: #a83279;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+}
+
+/* Show only on mobile devices */
+@media (max-width: 768px) {
+  .call-now-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+}
 
 #order h2 {
   text-align: center;
@@ -579,6 +604,9 @@ footer {
 </a>
 
 </body>
+<a class="call-now-button" href="tel:+447435924921">
+  📞 Call Now
+</a>
 <script>
   const faqItems = document.querySelectorAll('.faq-item');
 
